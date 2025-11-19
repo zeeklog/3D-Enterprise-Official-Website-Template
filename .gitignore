@@ -26,7 +26,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-yarn.lock
-package-lock.json
-bun.lockb

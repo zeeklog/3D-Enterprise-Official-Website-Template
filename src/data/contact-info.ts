@@ -18,7 +18,7 @@ export const contactInfo: ContactInfoItem[] = [
   {
     icon: Mail,
     title: "电子邮箱",
-    content: "sales@catparty.vip",
+    content: "sales@catparty.cn",
     gradient: "from-purple-500 to-pink-500",
   },
   {

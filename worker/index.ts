@@ -23,6 +23,7 @@ export default {
     // 如果资源存在（状态码不是 404），直接返回
     if (response.status !== 404) {
       return response;
+      
     }
 
     // 对于 SPA 路由，所有未找到的路径都返回 index.html
