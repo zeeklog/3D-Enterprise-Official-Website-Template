@@ -30,8 +30,8 @@ const Solutions = () => {
     },
     {
       icon: Radio,
-      title: "IOT物联网",
-      description: "设备互联、数据采集、智能控制，实现万物互联",
+      title: "宠物领域AI解决方案",
+      description: "宠物行业APP、物联网产品定制、智能控制、AI分析",
       gradient: "from-indigo-500 to-blue-500",
     },
     {

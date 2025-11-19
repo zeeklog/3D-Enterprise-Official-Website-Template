@@ -53,13 +53,14 @@ const SolutionsPage = () => {
     },
     {
       icon: Radio,
-      title: "IOT物联网",
+      title: "宠物领域AI解决方案",
       gradient: "from-indigo-500 to-blue-500",
       features: [
-        "设备互联互通",
-        "实时数据采集",
-        "远程智能控制",
-        "边缘计算能力",
+        "宠物行业APP开发",
+        "物联网产品定制",
+        "智能设备控制",
+        "AI行为分析",
+        "健康数据追踪",
       ],
     },
     {
