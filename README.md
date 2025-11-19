@@ -62,6 +62,38 @@ This project is built with:
 
 ## How can I deploy this project?
 
+### Deploy to Cloudflare Workers
+
+This project is configured to deploy to Cloudflare Workers. Follow these steps:
+
+1. **Install dependencies** (if not already done):
+   ```sh
+   npm install
+   ```
+
+2. **Login to Cloudflare**:
+   ```sh
+   npx wrangler login
+   ```
+
+3. **Build and deploy**:
+   ```sh
+   npm run deploy
+   ```
+
+   Or deploy to preview environment:
+   ```sh
+   npm run deploy:preview
+   ```
+
+4. **Development with Workers**:
+   ```sh
+   npm run build
+   npm run worker:dev
+   ```
+
+### Deploy via Lovable
+
 Simply open [Lovable](https://lovable.dev/projects/afba4c42-fce1-417a-95c6-6fce5ef456b6) and click on Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
