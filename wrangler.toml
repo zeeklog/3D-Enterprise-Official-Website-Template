@@ -1,0 +1,17 @@
+name = "intellipark-solutions"
+main = "worker/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# 静态资源目录
+[site]
+bucket = "./dist"
+
+# 生产环境配置
+[env.production]
+name = "intellipark-solutions"
+
+# 预览环境配置
+[env.preview]
+name = "intellipark-solutions-preview"
+
