@@ -1,12 +1,22 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import Logo from "@/components/Logo";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { contactInfo } from "@/data/contact-info";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,11 +43,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-xl font-bold text-primary-foreground">智</span>
-            </div>
-            <span className="text-xl font-bold gradient-text">智慧科技</span>
+          <Link to="/" className="flex items-center">
+            <Logo />
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,7 +58,10 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="gradient-primary hover:opacity-90 transition-opacity">
+            <Button
+              className="gradient-primary hover:opacity-90 transition-opacity"
+              onClick={() => setIsContactDialogOpen(true)}
+            >
               获取方案
             </Button>
           </div>
@@ -86,13 +96,48 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button className="w-full gradient-primary hover:opacity-90 transition-opacity">
+              <Button
+                className="w-full gradient-primary hover:opacity-90 transition-opacity"
+                onClick={() => {
+                  setIsContactDialogOpen(true);
+                  setIsMobileMenuOpen(false);
+                }}
+              >
                 获取方案
               </Button>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
+
+      <Dialog open={isContactDialogOpen} onOpenChange={setIsContactDialogOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>获取方案</DialogTitle>
+            <DialogDescription>联系我们的方式</DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4">
+            {contactInfo.map((info) => (
+              <div
+                key={info.title}
+                className="flex items-center gap-4 rounded-xl border p-4"
+              >
+                <div
+                  className={`flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br ${info.gradient}`}
+                >
+                  <info.icon className="text-white" size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">{info.title}</p>
+                  <p className="text-lg font-semibold text-foreground">
+                    {info.content}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </DialogContent>
+      </Dialog>
     </motion.nav>
   );
 };

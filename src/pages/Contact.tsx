@@ -1,35 +1,15 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "sonner";
+import { contactInfo } from "@/data/contact-info";
 
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: "联系电话",
-      content: "400-888-8888",
-      gradient: "from-blue-500 to-cyan-500",
-    },
-    {
-      icon: Mail,
-      title: "电子邮箱",
-      content: "contact@smarttech.com",
-      gradient: "from-purple-500 to-pink-500",
-    },
-    {
-      icon: MapPin,
-      title: "公司地址",
-      content: "中国·深圳市南山区科技园",
-      gradient: "from-green-500 to-emerald-500",
-    },
-  ];
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("消息已发送！我们会尽快与您联系。");
@@ -78,7 +58,7 @@ const Contact = () => {
             ))}
           </div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
@@ -144,7 +124,7 @@ const Contact = () => {
                 </form>
               </CardContent>
             </Card>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />

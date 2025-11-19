@@ -69,9 +69,9 @@ const Hero = () => {
         {/* Floating Cards */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { number: "500+", label: "企业客户" },
-            { number: "98%", label: "满意度" },
-            { number: "24/7", label: "技术支持" },
+            { number: "100+", label: "专精6大领域100+解决方案" },
+            { number: "10", label: "10年物联网行业经验" },
+            { number: "24/7", label: "7x24小时专业术支持和维保支持" },
           ].map((stat, index) => (
             <motion.div
               key={index}

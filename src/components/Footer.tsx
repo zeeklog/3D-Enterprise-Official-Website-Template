@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,12 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">智</span>
-              </div>
-              <span className="text-xl font-bold gradient-text">智慧科技</span>
-            </div>
+            <Logo className="mb-4" />
             <p className="text-muted-foreground text-sm">
               专注于AI驱动的智能化解决方案，为企业提供最前沿的技术服务
             </p>
@@ -43,11 +39,11 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center space-x-2">
                 <Phone size={16} className="text-primary" />
-                <span>400-888-8888</span>
+                <span>0755-32867416 / 13822770125</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} className="text-primary" />
-                <span>contact@smarttech.com</span>
+                <span>sales@catparty.vip</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin size={16} className="text-primary" />
@@ -58,7 +54,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} 智慧科技. All rights reserved.</p>
+          <p>&copy; {currentYear} 猫趴科技. All rights reserved.</p>
         </div>
       </div>
     </footer>
