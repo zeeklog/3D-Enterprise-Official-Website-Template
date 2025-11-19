@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <Logo className="mb-4" />
             <p className="text-muted-foreground text-sm">
-              专注于AI驱动的智能化解决方案，为企业提供最前沿的技术服务
+            先帮助一部分企业实现AI智能化升级
             </p>
           </div>
 

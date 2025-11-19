@@ -33,8 +33,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
           >
-            重新定义
-            <span className="gradient-text block mt-2">智慧生活方式</span>
+            先帮助一部分企业
+            <span className="gradient-text block mt-2">实现AI智能化升级</span>
           </motion.h1>
 
           <motion.p
@@ -43,7 +43,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto"
           >
-            从AI智慧停车到智能物业管理，我们提供全方位的智能化解决方案，助力企业数字化转型
+            从AI智慧停车到智能物业管理，我们提供全方位的智能化解决方案，助力企业AI升级业务增长。
           </motion.p>
 
           <motion.div
@@ -70,7 +70,7 @@ const Hero = () => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             { number: "100+", label: "专精6大领域100+解决方案" },
-            { number: "10", label: "10年物联网行业经验" },
+            { number: "10", label: "深耕智能化升级10年，打造最强业务驱动AI引擎" },
             { number: "24/7", label: "7x24小时专业术支持和维保支持" },
           ].map((stat, index) => (
             <motion.div

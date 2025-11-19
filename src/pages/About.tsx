@@ -9,22 +9,22 @@ const About = () => {
     {
       icon: Target,
       title: "使命",
-      description: "通过AI和物联网技术，让智慧生活触手可及",
+      description: "AI驱动增长，科技点亮商机",
     },
     {
       icon: Users,
       title: "团队",
-      description: "汇聚行业顶尖人才，打造专业技术团队",
+      description: "智能化转型升级专家团，深耕AI与物联网领域",
     },
     {
       icon: Award,
-      title: "荣誉",
-      description: "多项行业认证和奖项，实力获得认可",
+      title: "方案",
+      description: "沉淀6大领域100+专业解决方案",
     },
     {
       icon: Lightbulb,
       title: "创新",
-      description: "持续技术创新，引领行业发展方向",
+      description: "持续技术创新解决方案，为客户注入业务增长核心动力",
     },
   ];
 
@@ -46,7 +46,7 @@ const About = () => {
               关于<span className="gradient-text">我们</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              我们是一家专注于AI和物联网技术的创新型科技公司，致力于为企业提供智能化解决方案
+              先帮助一部分企业实现AI智能化升级
             </p>
           </motion.div>
 
