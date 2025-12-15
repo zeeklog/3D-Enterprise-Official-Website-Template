@@ -1,10 +1,12 @@
-# Intellipark Solutions
+# 3D official website react template
 
-> AI驱动的智能化解决方案平台
+> AI驱动的智能化解决方案平台官网模版， 【猫趴科技】官网代码开源；
 
-Intellipark Solutions 是一个现代化的企业级智能化解决方案展示平台，专注于为企业提供全方位的AI智能化升级服务，涵盖智慧停车、智能物业管理、AI智能体定制等多个领域。
+现代化企业官网模版，企业级智能化解决方案展示平台，shadcn+Three+Vite+React+Framer Motio企业官网模版
 
 ![Intellipark Solutions](./public/image.png)
+
+- 预览：[猫趴科技官网](https://catparty.cn)
 
 ## ✨ 特性
 
