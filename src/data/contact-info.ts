@@ -12,7 +12,7 @@ export const contactInfo: ContactInfoItem[] = [
   {
     icon: Phone,
     title: "联系电话",
-    content: "0755-32867416 / 13822770125",
+    content: "0755-32867416 / 13828510994",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
