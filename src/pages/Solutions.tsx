@@ -8,7 +8,7 @@ const SolutionsPage = () => {
   const solutions = [
     {
       icon: Car,
-      title: "AI智慧停车解决方案",
+      title: "AI智慧车场解决方案",
       gradient: "from-blue-500 to-cyan-500",
       features: [
         "智能车位识别与导航",
@@ -30,25 +30,25 @@ const SolutionsPage = () => {
     },
     {
       icon: Lock,
-      title: "智慧门禁通行解决方案",
+      title: "客户端/APP开发",
       gradient: "from-green-500 to-emerald-500",
       features: [
-        "人脸识别快速通行",
-        "多维度权限管理",
-        "访客预约与登记",
-        "实时监控与预警",
+        "苹果、Windows桌面软件",
+        "苹果APP、安卓APP开发",
+        "小程序、H5",
+        "鸿蒙体系应用开发",
       ],
     },
     {
       icon: Building2,
-      title: "智慧物业解决方案",
+      title: "体育赛事系统解决方案",
       gradient: "from-orange-500 to-red-500",
       features: [
-        "设备维保管理",
-        "智能通行控制",
+        "体育赛事经营管理",
+        "赛事服务与互动模块",
         "安防监控集成",
-        "工单处理系统",
-        "资产全生命周期管理",
+        "场地网络等关键技术支撑",
+        "指挥调度平台",
       ],
     },
     {
