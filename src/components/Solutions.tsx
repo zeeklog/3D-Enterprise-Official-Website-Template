@@ -6,7 +6,7 @@ const Solutions = () => {
   const solutions = [
     {
       icon: Car,
-      title: "AI智慧停车",
+      title: "AI智慧车场",
       description: "智能车位识别、自动计费、无感支付，打造高效停车体验",
       gradient: "from-blue-500 to-cyan-500",
     },
@@ -18,14 +18,14 @@ const Solutions = () => {
     },
     {
       icon: Lock,
-      title: "智慧门禁通行",
-      description: "人脸识别、权限管理、访客系统，构建安全通行环境",
+      title: "体育赛事解决方案",
+      description: "体育赛事全流程数字化",
       gradient: "from-green-500 to-emerald-500",
     },
     {
       icon: Building2,
-      title: "智慧物业解决方案",
-      description: "维保、通行、安防、工单、资产管理一体化平台",
+      title: "客户端APP专业定制",
+      description: "专业苹果、安卓、MAC、Windows客户端定制",
       gradient: "from-orange-500 to-red-500",
     },
     {

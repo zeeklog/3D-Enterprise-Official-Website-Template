@@ -21,8 +21,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link to="/solutions" className="hover:text-primary transition-colors">AI智慧停车</Link></li>
               <li><Link to="/solutions" className="hover:text-primary transition-colors">智能体定制</Link></li>
-              <li><Link to="/solutions" className="hover:text-primary transition-colors">智慧门禁</Link></li>
-              <li><Link to="/solutions" className="hover:text-primary transition-colors">智慧物业</Link></li>
+              <li><Link to="/solutions" className="hover:text-primary transition-colors">体育赛事解决方案</Link></li>
+              <li><Link to="/solutions" className="hover:text-primary transition-colors">客户端APP定制</Link></li>
             </ul>
           </div>
 
